@@ -76,6 +76,101 @@
 		.video-wrap{
 			z-index: 4 !important;
 		}
+        .mh-hero-content {
+            position: absolute;
+            z-index: 6;
+            left: 50%;
+            top: 52%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            max-width: 920px;
+            width: calc(100% - 40px);
+            pointer-events: none;
+        }
+        .mh-hero-content h1 {
+            color: #fff;
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-shadow: 0 6px 24px rgba(0,0,0,.45);
+        }
+        .mh-hero-content p {
+            color: rgba(255,255,255,.92);
+            font-size: 18px;
+            margin-bottom: 26px;
+            text-shadow: 0 4px 18px rgba(0,0,0,.4);
+        }
+        .mh-hero-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            pointer-events: auto;
+        }
+        .mh-hero-btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,.45);
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: .4px;
+            background: rgba(0,0,0,.28);
+            text-decoration: none;
+        }
+        .mh-hero-btn.primary {
+            background: #e43f3f;
+            border-color: #e43f3f;
+        }
+        .mh-home-grid {
+            background: #1f1f1f;
+            padding: 56px 0 40px;
+        }
+        .mh-home-grid h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 28px;
+            font-size: 30px;
+            letter-spacing: .4px;
+        }
+        .mh-home-cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0,1fr));
+            gap: 18px;
+        }
+        .mh-home-card {
+            display: block;
+            text-decoration: none;
+            background: #2a2a2a;
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .mh-home-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .mh-home-card span {
+            display: block;
+            color: #fff;
+            padding: 12px 14px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        @media (max-width: 980px){
+            .mh-home-cards { grid-template-columns: repeat(2, minmax(0,1fr)); }
+            .mh-hero-content h1 { font-size: 33px; }
+        }
+        @media (max-width: 640px){
+            .mh-home-cards { grid-template-columns: 1fr; }
+            .mh-hero-content h1 { font-size: 27px; }
+            .mh-hero-content p { font-size: 15px; }
+        }
     </style>
 
 	<script>
@@ -152,9 +247,9 @@
 
 					<div id="logo">
 
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Minghong Logo"></a>
+						<a href="/" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Minghong Logo"></a>
 
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Minghong Logo"></a>
+						<a href="/" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Minghong Logo"></a>
 
 					</div><!-- #logo end -->
 
@@ -172,25 +267,25 @@
 
 						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 
-							<li><a href="index.html"><div style="color: #e43f3f;">Home</div></a>
+							<li><a href="/"><div style="color: #e43f3f;">Home</div></a>
 
-							<li><a href="product.html"><div style="color: #fff;">Product</div></a>
+							<li><a href="/product"><div style="color: #fff;">Product</div></a>
 
 								<ul>
 
-											<li><a href="product.html"><div>Aries</div></a>
+											<li><a href="/product"><div>Aries</div></a>
 
 												<ul>
 
-														<li><a href="aries-c1.html"><div>Aries C1</div></a></li>
+														<li><a href="/aries-c1"><div>Aries C1</div></a></li>
 
-														<li><a href="aries-c2.html"><div>Aries C2</div></a></li>
+														<li><a href="/aries-c2"><div>Aries C2</div></a></li>
 
-														<li><a href="aries-classic.html"><div>Aries Classic</div></a></li>
+														<li><a href="/aries-classic"><div>Aries Classic</div></a></li>
 
-														<li><a href="aries-p1.html"><div>Aries P1</div></a></li>
+														<li><a href="/aries-p1"><div>Aries P1</div></a></li>
 														
-														<li><a href="aries-power.html"><div>Aries Power</div></a></li>
+														<li><a href="/aries-power"><div>Aries Power</div></a></li>
 
 												</ul>
 
@@ -202,15 +297,15 @@
 
 
 
-											<li><a href="product.html"><div>LEO</div></a>
+											<li><a href="/product"><div>LEO</div></a>
 
 												<ul>
 
-														<li><a href="leo-c1.html"><div>Leo C1</div></a></li>
+														<li><a href="/leo-c1"><div>Leo C1</div></a></li>
 
-														<li><a href="leo-c2.html"><div>Leo C2</div></a></li>
+														<li><a href="/leo-c2"><div>Leo C2</div></a></li>
 
-														<li><a href="leo-p1.html"><div>Leo P1</div></a></li>	
+														<li><a href="/leo-p1"><div>Leo P1</div></a></li>	
 
 												</ul>
 
@@ -218,19 +313,19 @@
 
 
 
-											<li><a href="product.html"><div>Pisces</div></a>
+											<li><a href="/product"><div>Pisces</div></a>
 
 												<ul>
 
-														<li><a href="pisces-c1.html"><div>Pisces C1</div></a></li>
+														<li><a href="/pisces-c1"><div>Pisces C1</div></a></li>
 
-													<li><a href="pisces-c2.html"><div>Pisces C2</div></a></li>
+													<li><a href="/pisces-c2"><div>Pisces C2</div></a></li>
 
-														<li><a href="pisces-c3.html"><div>Pisces C3</div></a></li>
+														<li><a href="/pisces-c3"><div>Pisces C3</div></a></li>
 
-														<li><a href="pisces-p1.html"><div>Pisces P1</div></a></li>
+														<li><a href="/pisces-p1"><div>Pisces P1</div></a></li>
 
-														<li><a href="pisces-transformers.html"><div>Pisces Transformers </div></a></li>
+														<li><a href="/pisces-transformers"><div>Pisces Transformers </div></a></li>
 
 
 
@@ -240,15 +335,15 @@
 
 
 
-											<li><a href="product.html"><div>SEV</div></a>
+											<li><a href="/product"><div>SEV</div></a>
 
 												<ul>
 
-														<li><a href="sev-s1.html"><div>SEV-S1</div></a></li>
+														<li><a href="/sev-s1"><div>SEV-S1</div></a></li>
 
-													<li><a href="sev-s2.html"><div>SEV-S2</div></a></li>
+													<li><a href="/sev-s2"><div>SEV-S2</div></a></li>
 
-													<li><a href="golf1.html"><div>Golf1</div></a></li>
+													<li><a href="/golf1"><div>Golf1</div></a></li>
 
 
 
@@ -262,13 +357,13 @@
 
 												<ul>
 
-														<li><a href="sagit-c1.html"><div>Sagit C1</div></a></li>
+														<li><a href="/sagit-c1"><div>Sagit C1</div></a></li>
 
-													<li><a href="sagit-c2.html"><div>Sagit C2</div></a></li>
+													<li><a href="/sagit-c2"><div>Sagit C2</div></a></li>
 
-													<!--<li><a href="sagit-p1.html"><div>Sagit P1</div></a></li>-->
+													<!--<li><a href="/sagit-p1"><div>Sagit P1</div></a></li>-->
 
-													<li><a href="sagit-p2.html"><div>Sagit P2</div></a></li>
+													<li><a href="/sagit-p2"><div>Sagit P2</div></a></li>
 
 
 
@@ -284,25 +379,25 @@
 
 
 
-						<li><a href="gallery.html"><div style="color: #fff;">Gallery</div></a></li>
+						<li><a href="/gallery"><div style="color: #fff;">Gallery</div></a></li>
 
 
 
-						<li><a href="about.html"><div style="color: #fff;">About us</div></a>
+						<li><a href="/about"><div style="color: #fff;">About us</div></a>
 
 
 
 									<ul>
 
-										<li><a href="about.html"><div>Company Overview</div></a></li>
+										<li><a href="/about"><div>Company Overview</div></a></li>
 
-											<li><a href="about.html"><div>Our Team</div></a></li>
+											<li><a href="/about"><div>Our Team</div></a></li>
 
-												<li><a href="about.html"><div>Our Advantages</div></a></li>
+												<li><a href="/about"><div>Our Advantages</div></a></li>
 
-													<li><a href="about.html"><div>Certifications</div></a></li>
+													<li><a href="/about"><div>Certifications</div></a></li>
 
-														<li><a href="about.html"><div>Contact Us</div></a></li>
+														<li><a href="/about"><div>Contact Us</div></a></li>
 
 
 
@@ -314,17 +409,17 @@
 
 
 
-							<li><a href="business.html"><div style="color: #fff;">Business</div></a>
+							<li><a href="/business"><div style="color: #fff;">Business</div></a>
 
 									<ul>
 
-										<li><a href="business.html"><div>Our Cooperation Model Conception </div></a></li>
+										<li><a href="/business"><div>Our Cooperation Model Conception </div></a></li>
 
-										<li><a href="business.html"><div>Our Existing Joint Ventures</div></a></li>
+										<li><a href="/business"><div>Our Existing Joint Ventures</div></a></li>
 
-										<li><a href="business.html"><div>Joining Cooperation Process </div></a></li>
+										<li><a href="/business"><div>Joining Cooperation Process </div></a></li>
 
-										<li><a href="business.html"><div>Minghong-Sviwo News</div></a></li>
+										<li><a href="/business"><div>Minghong-Sviwo News</div></a></li>
 
 									</ul>
 
@@ -332,8 +427,8 @@
 
 
 
-							<li><a href="blog.html"><div style="color: #fff;">BLOG</div></a></li>
-							<!-- <li><a href="blog.html"><div style="color: #fff;">CAREER</div></a></li> -->
+							<li><a href="/blog"><div style="color: #fff;">BLOG</div></a></li>
+							<!-- <li><a href="/blog"><div style="color: #fff;">CAREER</div></a></li> -->
 
 						</ul>
 
@@ -383,9 +478,19 @@
 
 					</video>
                     <div class="videoPost">
-                        <img src="images/videos/poster.jpg" alt="">
+                        <img src="images/videos/poster.jpg" alt="Minghong hero poster">
                     </div>
-				<div class="video-overlay" style="background-color: rgba(0,0,0,0.20);"></div>	
+				<div class="video-overlay" style="background-color: rgba(0,0,0,0.42);"></div>
+
+                    <div class="mh-hero-content">
+                        <h1>Electric Tricycles & Mini Cars</h1>
+                        <p>Clean-energy mobility solutions by Sichuan Minghong Vehicle Manufacturing Co., Ltd.</p>
+                        <div class="mh-hero-actions">
+                            <a class="mh-hero-btn primary" href="/product">Explore Products</a>
+                            <a class="mh-hero-btn" href="/about">About MingHong</a>
+                            <a class="mh-hero-btn" href="/contact">Contact Us</a>
+                        </div>
+                    </div>
 
 				</div>
 
@@ -401,9 +506,25 @@
 
 		</section>
 
-
-
-
+        <section class="mh-home-grid">
+            <div class="container clearfix">
+                <h2>Featured Models</h2>
+                <div class="mh-home-cards">
+                    <a class="mh-home-card" href="/aries-c1">
+                        <img src="images/product/Aries/Aries-C1.jpg" alt="Aries C1">
+                        <span>Aries C1</span>
+                    </a>
+                    <a class="mh-home-card" href="/leo-c2">
+                        <img src="images/product/leo/leo-c2.jpg" alt="Leo C2">
+                        <span>Leo C2</span>
+                    </a>
+                    <a class="mh-home-card" href="/pisces-c3">
+                        <img src="images/product/pisces/Pisces-C3.jpg" alt="Pisces C3">
+                        <span>Pisces C3</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
 		<!-- Footer
 
@@ -501,7 +622,7 @@
 
 							<div class="widget clearfix">
 
-											<p style="margin-top: 30px;"> <a href="about.html" style="color:#fff;">Contact us</a></p>
+											<p style="margin-top: 30px;"> <a href="/about" style="color:#fff;">Contact us</a></p>
 
 
 

@@ -1,4 +1,158 @@
 {
   "cleanUrls": false,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/aries-c1",
+      "destination": "/aries-c1.html"
+    },
+    {
+      "source": "/aries-c2",
+      "destination": "/aries-c2.html"
+    },
+    {
+      "source": "/aries-classic",
+      "destination": "/aries-classic.html"
+    },
+    {
+      "source": "/aries-p1",
+      "destination": "/aries-p1.html"
+    },
+    {
+      "source": "/aries-power",
+      "destination": "/aries-power.html"
+    },
+    {
+      "source": "/around-the-world",
+      "destination": "/around-the-world.html"
+    },
+    {
+      "source": "/articleDetail1",
+      "destination": "/articleDetail1.html"
+    },
+    {
+      "source": "/articleDetail11",
+      "destination": "/articleDetail11.html"
+    },
+    {
+      "source": "/articleDetail2",
+      "destination": "/articleDetail2.html"
+    },
+    {
+      "source": "/articleDetail3",
+      "destination": "/articleDetail3.html"
+    },
+    {
+      "source": "/articleDetail4",
+      "destination": "/articleDetail4.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/business",
+      "destination": "/business.html"
+    },
+    {
+      "source": "/company",
+      "destination": "/company.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/gallery.html"
+    },
+    {
+      "source": "/golf1",
+      "destination": "/golf1.html"
+    },
+    {
+      "source": "/leo-c1",
+      "destination": "/leo-c1.html"
+    },
+    {
+      "source": "/leo-c2",
+      "destination": "/leo-c2.html"
+    },
+    {
+      "source": "/leo-p1",
+      "destination": "/leo-p1.html"
+    },
+    {
+      "source": "/pisces-c1",
+      "destination": "/pisces-c1.html"
+    },
+    {
+      "source": "/pisces-c2",
+      "destination": "/pisces-c2.html"
+    },
+    {
+      "source": "/pisces-c3",
+      "destination": "/pisces-c3.html"
+    },
+    {
+      "source": "/pisces-p1",
+      "destination": "/pisces-p1.html"
+    },
+    {
+      "source": "/pisces-transformers",
+      "destination": "/pisces-transformers.html"
+    },
+    {
+      "source": "/product",
+      "destination": "/product.html"
+    },
+    {
+      "source": "/product-update",
+      "destination": "/product-update.html"
+    },
+    {
+      "source": "/sagit-c1",
+      "destination": "/sagit-c1.html"
+    },
+    {
+      "source": "/sagit-c2",
+      "destination": "/sagit-c2.html"
+    },
+    {
+      "source": "/sagit-p1",
+      "destination": "/sagit-p1.html"
+    },
+    {
+      "source": "/sagit-p2",
+      "destination": "/sagit-p2.html"
+    },
+    {
+      "source": "/sev-s1",
+      "destination": "/sev-s1.html"
+    },
+    {
+      "source": "/sev-s2",
+      "destination": "/sev-s2.html"
+    }
+  ]
 }
