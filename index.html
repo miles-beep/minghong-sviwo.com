@@ -472,7 +472,7 @@
 
 					<video preload="auto" loop muted poster="images/videos/poster.jpg" id="indexVideo">
 
-						<source src='images/videos/minghong2018.webm' type='video/mp4' />
+						<source src='images/videos/minghong2018.webm' type='video/webm' />
 
 						<!--<source src='images/videos/minghong2018.webm' type='video/webm' />-->
 
@@ -670,18 +670,29 @@
 
 	<script type="text/javascript" src="js/functions.js"></script>
 
-    <!--add some script for video player==================-->
     <script>
-        $('.video-overlay').on('mouseenter',function () {
-          $('.videoPost').fadeOut()
-          $('#indexVideo')[0].play()
-          console.log('play')
-        })
-        $('.video-overlay').on('mouseleave',function () {
-          $('#indexVideo')[0].pause()
-          $('.videoPost').fadeIn()
-          console.log('pause')
-        })
+      (function () {
+        var video = document.getElementById('indexVideo');
+        var poster = document.querySelector('.videoPost');
+        if (!video || !poster) return;
+
+        poster.style.transition = 'opacity 0.35s ease';
+
+        // Keep poster visible until video is actually playing.
+        var showPoster = function () { poster.style.opacity = '1'; };
+        var hidePoster = function () { poster.style.opacity = '0'; };
+
+        video.addEventListener('playing', hidePoster);
+        video.addEventListener('pause', showPoster);
+        video.addEventListener('stalled', showPoster);
+        video.addEventListener('waiting', showPoster);
+        video.addEventListener('error', showPoster);
+
+        // In case autoplay is blocked or file decode is slow, do not hide poster.
+        setTimeout(function () {
+          if (video.readyState < 3 || video.paused) showPoster();
+        }, 1200);
+      })();
     </script>
 </body>
 
