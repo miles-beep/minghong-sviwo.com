@@ -3,11 +3,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/",
-      "destination": "https://myleon.co/",
-      "permanent": false
-    },
-    {
       "source": "/:path*",
       "destination": "https://myleon.co/",
       "permanent": false
