@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://myleon.co/
+Sitemap: https://minghong-sviwo.com/sitemap.xml
