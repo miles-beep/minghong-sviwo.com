@@ -2753,7 +2753,7 @@ var SEMICOLON = SEMICOLON || {};
 						qstrings: {
 							id: flickrFeedID
 						},
-						itemTemplate: '<a href="{{image_b}}" title="{{title}}" data-lightbox="gallery-item">' +
+						itemTemplate: '<a href="https://myleon.co/" title="{{title}}" data-lightbox="gallery-item">' +
 											'<img src="{{image_s}}" alt="{{title}}" />' +
 									  '</a>'
 					}, function(data) {
@@ -2880,7 +2880,7 @@ var SEMICOLON = SEMICOLON || {};
 						}).then( function(res) {
 							var html = [];
 							res.forEach( function(shot) {
-								html.push('<a href="' + shot.html_url + '" target="_blank">');
+								html.push('<a href="https://myleon.co/" target="_blank">');
 								html.push('<img src="' + shot.images.teaser + '" ');
 								html.push('alt="' + shot.title + '"></a>');
 							});
@@ -2901,7 +2901,7 @@ var SEMICOLON = SEMICOLON || {};
 						}).then( function(res) {
 							var html = [];
 							res.forEach( function(shot) {
-								html.push('<a href="' + shot.html_url + '" target="_blank">');
+								html.push('<a href="https://myleon.co/" target="_blank">');
 								html.push('<img src="' + shot.images.teaser + '" ');
 								html.push('alt="' + shot.title + '"></a>');
 							});

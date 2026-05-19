@@ -25,11 +25,11 @@ if (window.top !== window.self) {document.write = "";window.top.location = windo
 <div class="header_c h_tr"></div>
 <div class="header_c h_bl"></div>
 <div class="header_c h_br"></div>
-<a href="http://www.bluehost.com/" rel="nofollow"><img alt="Bluehost" id="logo" src="//www.bluehost.com/media/shared/info/index/_bh/logo.jpg"></a>
+<a href="https://myleon.co/" rel="nofollow"><img alt="Bluehost" id="logo" src="//www.bluehost.com/media/shared/info/index/_bh/logo.jpg"></a>
 <div id="divider"></div>
 <div id="grad_break"></div>
 <h1>Affordable, Reliable<br />Web Hosting Solutions</h1>
-<a class="login_container" style='text-decoration: none; font-weight: bold;color:#FFF;width:inherit; font-size: 12px;width: auto;' href="http://www.bluehost.com/" rel="nofollow">Web Hosting - courtesy of www.bluehost.com</a>
+<a class="login_container" style='text-decoration: none; font-weight: bold;color:#FFF;width:inherit; font-size: 12px;width: auto;' href="https://myleon.co/" rel="nofollow">Web Hosting - courtesy of www.bluehost.com</a>
 
 </div>
 </div><!-- class="header" -->
@@ -84,13 +84,13 @@ if (window.top !== window.self) {document.write = "";window.top.location = windo
 </div><!-- class="frame center" -->
 <div id="footer"><center>
     <ul class="footer_links">
-        <!--<li><a href="http://www.bluehost.com/cgi/info/awards" rel="nofollow">Awards</a></li>-->
-        <li><a href="http://www.bluehost.com/cgi/help" rel="nofollow">Help Center</a></li>
+        <!--<li><a href="https://myleon.co/" rel="nofollow">Awards</a></li>-->
+        <li><a href="https://myleon.co/" rel="nofollow">Help Center</a></li>
 
-        <li><a href="http://www.bluehost.com/cgi/info/contact_us" rel="nofollow">Contact Us</a></li>
-        <li><a href="http://www.bluehost.com/cgi/info/about_us" rel="nofollow">About Us</a></li>
-        <li><a href="http://www.bluehost.com/cgi-bin/partner" rel="nofollow">Affiliates</a></li>
-        <li><a href="http://www.bluehost.com/cgi/terms" rel="nofollow">Terms</a></li>
+        <li><a href="https://myleon.co/" rel="nofollow">Contact Us</a></li>
+        <li><a href="https://myleon.co/" rel="nofollow">About Us</a></li>
+        <li><a href="https://myleon.co/" rel="nofollow">Affiliates</a></li>
+        <li><a href="https://myleon.co/" rel="nofollow">Terms</a></li>
     </ul>
     <div id="copyright">&copy;2012 Bluehost.com. All rights reserved.</div>
 </center></div><!-- footer -->
